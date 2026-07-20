@@ -1,1 +1,139 @@
-k
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <title>Luke bennett | Página em Construção | Links Oficiais</title>
+    <meta name="robots" content="noindex, nofollow"> <!-- Evita que o Google indexe essa página de erro -->
+
+    <!-- Fontes & Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+       <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <!-- Compartilhando o mesmo estilo principal -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Estilo extra específico para esta página de status -->
+    <style>
+        .status-container {
+            text-align: center;
+            margin: auto 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+            padding: 20px;
+        }
+
+        .status-icon-wrapper {
+            position: relative;
+            font-size: 4.5rem;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        .status-icon {
+            background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 15px rgba(0, 229, 255, 0.4));
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .status-container h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .status-container p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            max-width: 400px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        /* Botão estilizado de voltar */
+        .btn-voltar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #ffffff;
+            background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+            box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-voltar:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 8px 25px rgba(0, 240, 255, 0.6);
+            border-color: var(--neon-cyan);
+        }
+
+        .btn-voltar:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Canvas para manter o mesmo fundo interativo de partículas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Container Principal (Centralizado) -->
+    <main class="main-container">
+        
+        <!-- Controles Flutuantes (Tema) -->
+        <div class="floating-controls">
+            <button id="theme-toggle" class="control-btn" title="Alternar Tema" aria-label="Alternar Tema">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div></div> <!-- Div vazia para manter o alinhamento já que tiramos o de compartilhar daqui -->
+        </div>
+
+        <!-- Conteúdo de Status / Em Construção -->
+        <div class="status-container">
+            <div class="status-icon-wrapper">
+                <i class="fa-solid fa-screwdriver-wrench status-icon"></i>
+            </div>
+            
+            <h2>Página em Construção</h2>
+            <p>Este link está temporariamente indisponível ou sendo atualizado para trazer novidades em breve. Fique atento!</p>
+            
+            <a href="index.html" class="btn-voltar">
+                <i class="fas fa-arrow-left"></i>
+                Voltar aos Links Úteis
+            </a>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="main-footer">
+            <p>&copy; <span id="current-year"></span> • Desenvolvido por <strong>Luciano</strong>.</p>
+        </footer>
+    </main>
+
+    <!-- Script compartilhado para manter animações e tema consistente -->
+    <script src="js/script.js"></script>
+</body>
+</html>
