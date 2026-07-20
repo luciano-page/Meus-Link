@@ -1,1 +1,77 @@
-Ola
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <title>Luke bennett | Influenciador | Meus Links Oficiais</title>
+    <meta name="description" content="Acesse todos os canais oficiais, redes sociais e novidades em um só lugar.">
+    <meta name="author" content="Luciano">
+    
+    <!-- Open Graph (Compartilhamento Redes Sociais) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Influenciador | Meus Links Oficiais">
+    <meta property="og:description" content="Acesse todos os canais oficiais, redes sociais e novidades em um só lugar.">
+    <meta property="og:image" content="assets/img/avatar.jpg">
+    <meta property="og:url" content="https://seusite.com.br">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Fontes & Ícones (Google Fonts & Font Awesome) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Arquivo de Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Canvas para o Fundo de Partículas Interativo -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Container Principal (Centralizado) -->
+    <main class="main-container">
+        
+        <!-- Controles Flutuantes (Tema e Compartilhar) -->
+        <div class="floating-controls">
+            <button id="theme-toggle" class="control-btn" title="Alternar Tema" aria-label="Alternar Tema">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="share-btn" class="control-btn" title="Compartilhar Página" aria-label="Compartilhar Página">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+
+        <!-- Cabeçalho (Perfil) -->
+        <header class="profile-header">
+            <div class="avatar-container">
+                <!-- Substitua 'assets/img/avatar.jpg' pela foto dele -->
+                <img src="assets/img/avatar.jpg" alt="Foto de Perfil" id="profile-img" onerror="this.src='https://picsum.photos/150'">
+                <div class="avatar-pulse"></div>
+            </div>
+            <h1 id="profile-name">Nome do Influenciador</h1>
+            <p id="profile-bio">Criador de conteúdo digital & focado em tecnologia e inovação. ✨</p>
+        </header>
+
+        <!-- Seção de Links (Gerada Dinamicamente pelo JS) -->
+        <section class="links-container" id="links-wrapper">
+            <!-- Os botões serão injetados aqui pelo script.js -->
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="main-footer">
+            <p>&copy; <span id="current-year"></span> • Desenvolvido por <strong>Luciano</strong>.</p>
+        </footer>
+    </main>
+
+    <!-- Toast de Notificação (Para avisar que o link foi copiado) -->
+    <div id="toast" class="toast">Link copiado para a área de transferência!</div>
+
+    <!-- Script de Configuração e Efeitos -->
+    <script src="js/script.js"></script>
+</body>
+</html>
